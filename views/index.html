@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <link rel="stylesheet" href= 
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> 
+    <script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> 
+    </script> 
+    <script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"> 
+    </script> 
+    <script src= 
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"> 
+    </script> 
+  
+    <!-- CDN link used below is compatible with this example -->
+    <link rel="stylesheet" href= 
+"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css"> 
+    <script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"
+> 
+    </script> 
+    <script>
+        function submitted(){
+            link = document.getElementById("dynamic_select").value;
+          document.getElementById("video").src = "https://www.youtube.com/embed/"+link+"?rel=0&amp;showinfo=0";
+        }
+        </script>
+ 
+ <!-- CDN link used below is compatible with this example -->
+  
+</head> 
+  
+<body> 
+    <h1 style="color:black"> 
+        Language Selector
+    </h1> 
+  
+    <!-- Using the attributes to style the  
+        <select> and <option> tag -->
+
+            <!-- Update Youtube Link for Each Language Here-->
+                    
+            <select  class="selectpicker" id="dynamic_select" onchange="submitted()"> 
+                <option selected value="hag8o6w65C4">Floor</option>
+                <option value="SAKYJ8epVVI">English</option>
+                <option value="hf0w_bi_iGQ">French</option>
+                <option value="1tqjYPauDds">Russian</option>
+                <option value="0VWWcTvnyW4">Chinese</option>
+                <option value="qk2b7MTDQwI">Sign Language</option>
+              </select>
+              <var><b></b></var>
+              
+</body> 
+
+<div class="container">
+    <h2>Panel Heading</h2>
+    <div class="panel panel-default">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe id="video" class="youtube" width="560" height="315" src= "https://www.youtube.com/embed/hag8o6w65C4?rel=0&amp;showinfo=0"></iframe>
+    </div>
+    </div>
+  </div>
+  
+</html> 
